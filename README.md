@@ -1,2 +1,5 @@
-# condor
-software para el restaurante café condor
+# Café Condor
+
+### ISSUES
+
+- issue#00b-Estructura

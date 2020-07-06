@@ -1,0 +1,52 @@
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [final];
+}
+.item {
+  display: grid;
+  /* border: 1px dashed; */
+}
+
+.txt-provider {
+  grid-column: inicio / linea4;
+}
+.btn-choose {
+  grid-column: linea4 / linea6;
+  justify-content: center;
+  align-content: center;
+}
+.btn-cam {
+  grid-column: linea6 / final;
+  justify-content: center;
+  align-content: center;
+}
+.tbl-list {
+  grid-column: inicio / final;
+}
+.total {
+  grid-column: inicio / final;
+  justify-content: center;
+  align-content: center;
+}
+.total h2 {
+  display: inline-block;
+  text-align: center;
+}
+.total span.tag{
+  display: flex;
+  align-self: center;
+  font-size: 1.2em;
+}
+.txt-paid {
+  grid-column: inicio / linea4;
+}
+.txt-change {
+  grid-column: linea4 / final;
+}
+.btn-save {
+  grid-column: inicio / final;
+}
+.btn-cancel {
+  grid-column: inicio / final;
+}

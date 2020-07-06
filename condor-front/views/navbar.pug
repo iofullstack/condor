@@ -1,0 +1,25 @@
+nav.navbar.is-fixed-top.is-light(role="navigation" aria-label="main navigation")
+  .container
+    .navbar-brand
+      a.navbar-item(href="/")
+        img(src="/static/logo/condor-logo-black.png" alt="logo-condor" width="112" height="28")
+      a.navbar-burger(role="button" aria-label="menu" aria-expanded="false" data-target="navMenu")
+        span(aria-hidden="true")
+        span(aria-hidden="true")
+        span(aria-hidden="true")
+    .navbar-menu(id="navMenu")
+      .navbar-start
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link Usuarios
+          .navbar-dropdown
+            a.navbar-item Modulos
+            a.navbar-item Permisos
+            a.navbar-item Perfil de Seguridad
+            hr.navbar-divider
+            a.navbar-item Usuario
+      .navbar-end
+        .navbar-item
+          .buttons
+            a.button.is-danger
+              strong Sign out
+            a.button.is-info Log in

@@ -1,0 +1,11 @@
+200 y 400
+200: IT
+400: IVA
+
+Compra: NIT, Razon Social, numero de fact, numero de autorización, fecha factura, monto total, monto ICE, monto neto, codigo de control (5D-D7-3E-3A)
+
+Proveedor(numero de autorización)
+numero de autorización: cambia cada unos cuantos talonarios, depende de la dosificación
+antes de las 11
+
+Monto total = Monto ICE + Monto Neto

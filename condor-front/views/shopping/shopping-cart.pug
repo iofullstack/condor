@@ -1,0 +1,56 @@
+extends ../layout.pug
+
+block hero
+  section.hero.is-primary
+    .hero-body
+      .container
+        h1.title REALIZAR COMPRA
+        h2.subtitle Compra los mejores productos al mejor precio
+
+block content
+  .container.content
+    .item.txt-provider
+      .input-field
+        input.input-field(type="text" id="provider-input")
+        label(for="provider-input") Proveedor r/s
+    .item.btn-choose
+      .button.is-fullwidth.btn.waves-effect.waves-light.blue-grey.darken-2 Elegir
+        i.fas.fa-list.right(style="margin-left: 5px;") 
+    .item.btn-cam
+      .button.is-fullwidth.btn.waves-effect.waves-light.blue-grey.darken-2
+        i.fas.fa-camera.fa-2x
+    .item.tbl-list
+      table.striped
+        thead
+          tr
+            th Producto
+            th Cantidad
+            th Precio
+        tbody
+          tr
+            td Zanahoria
+            td 1 cuartilla
+            td 6 Bs.
+          tr
+            td Papa
+            td 1 arroba
+            td 25 Bs.
+          tr
+            td Arroz
+            td 5 Kilogramos
+            td 27 Bs.
+    .item.total
+      h2 TOTAL
+        span.tag 76Bs.
+    .item.txt-paid
+      .input-field
+        input.input-field(type="number" placeholder="Bs." id="paid-input")
+        label(for="paid-input") Pagado
+    .item.txt-change
+      .input-field
+        input.input-field(type="number" placeholder="Bs." id="change-input")
+        label(for="change-input") Cambio
+    .item.btn-save
+        .button.is-medium.is-link Listo
+    .item.btn-cancel
+        .button.is-medium.is-danger Cancelar
